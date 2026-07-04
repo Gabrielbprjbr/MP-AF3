@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+<<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#0c0f13">
@@ -495,5 +496,14 @@ document.getElementById('file-import').addEventListener('change',async e=>{
   setInterval(()=>{renderHead();},60000);
 })();
 </script>
-</body>
+</<script>
+  const SUPABASE_URL = 'https://mmdwgasszdgotfsjnzjl.supabase.com';
+  const SUPABASE_ANON_KEY = 'sb_publishable_v8xVAWy7mZH5AzrV-gAJ5A_YEl5QiNH';
+
+  const { createClient } = supabase;
+  const supabaseClient = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+  console.log('✅ Conectado ao Supabase!');
+</script>
+body>
 </html>
